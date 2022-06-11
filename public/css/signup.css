@@ -6,7 +6,8 @@ body {
 body {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
+  flex-direction: column;
+  /* -ms-flex-align: center; */
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -18,6 +19,7 @@ body {
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  background-color: #f5f5f5;
 }
 .form-signin .checkbox {
   font-weight: 400;
@@ -39,11 +41,44 @@ body {
 }
 .middle {
   margin-bottom: -1px;
-border-radius: 0;
+  border-radius: 0;
 }
 
 .bottom {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.intro {
+  background-color: cadetblue;
+}
+
+.card-img-bottom {
+  max-width: 600px;
+  max-height: 400px;
+  padding-bottom:75px ;
+}
+
+.i-box {
+  max-width: 800px;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  align-items: center;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solidrgba(0,0,0,.125); */
+  border-radius: 0.25rem;
+  margin-bottom: 1.10rem;
+}
+
+.nav {
+  display: flex;
 }

@@ -1,0 +1,15 @@
+###Recipe###
+#https://ketodietapp.com/Blog/lchf/rich-keto-chocolate-cheesecake
+
+
+PI Key: c32c2b7e719195561baba3adfe19606b-us1
+List/Audience ID: af7b718103
+
+ 
+const url = "https://us1.api.mailchimp.com/3.0/lists/af7b718103/";
+
+const options = {
+    method: "POST",
+    auth: "bryan1:c32c2b7e719195561baba3adfe19606b-us1"
+
+}
