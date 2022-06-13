@@ -8,18 +8,19 @@ body {
   display: flex;
   flex-direction: column;
   /* -ms-flex-align: center; */
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  /* align-items: center; */
+  /* padding-top: 40px; */
+  /* padding-bottom: 40px; */
   background-color: #f5f5f5;
 }
 
 .form-signin {
   width: 100%;
   max-width: 330px;
-  padding: 15px;
+  padding: 30px;
   margin: auto;
-  background-color: #f5f5f5;
+  margin-top: 75px;
+  background-color: #fff;
 }
 .form-signin .checkbox {
   font-weight: 400;
@@ -50,10 +51,6 @@ body {
   border-top-right-radius: 0;
 }
 
-.intro {
-  background-color: cadetblue;
-}
-
 .card-img-bottom {
   max-width: 600px;
   max-height: 400px;
@@ -77,8 +74,25 @@ body {
   /* border: 1px solidrgba(0,0,0,.125); */
   border-radius: 0.25rem;
   margin-bottom: 1.10rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  width: 754px;
+  height: 490px;
 }
 
-.nav {
+.nav ul lil ctm {
+  display:flex-start;
+  list-style: none;
+}
+
+.circletree_img {
+  margin-left: 700px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+
+}
+.card-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
