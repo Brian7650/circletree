@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
@@ -6,6 +7,8 @@ const urlencoded = require("body-parser/lib/types/urlencoded");
 const { json } = require("express/lib/response");
 
 const app = express();
+
+console.log()
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -34,13 +37,11 @@ app.post("/", function(req, res){
 
     const jsonData = JSON.stringify(data);
     
-    const url = "https://us1.api.mailchimp.
+    const url = "https://us1.api.mailchimp.com/3.0/lists/af7b718103/";
     const options = {
         method: "POST",
-        auth: "bryan1:c32c2b7e719
-
+        auth: "YOUR_API_KEY_HERE"
     }
-
 
     const request = https.request(url, options, function(response) {
         
