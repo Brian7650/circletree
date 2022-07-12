@@ -21,7 +21,7 @@ app.post("/", function(req, res){
     const firstName = req.body.fName;
     const lastName = req.body.lName;
     const email = req.body.email;
- 
+
     const data = {
         members: [
             {
@@ -36,21 +36,21 @@ app.post("/", function(req, res){
     };
 
     const jsonData = JSON.stringify(data);
-    
+
     const url = "https://us1.api.mailchimp.com/3.0/lists/af7b718103/";
     const options = {
         method: "POST",
-        auth: "YOUR_API_KEY_HERE"
+        auth: "bryan2:1f3b340aa14fbcd0aaddb4bd6ebef220-us1"
     }
 
     const request = https.request(url, options, function(response) {
-        
+
         if (response.statusCode === 200) {
             res.sendFile(__dirname + "/success.html");
         } else {
             res.sendFile(__dirname + "/failure.html");
         }
-        
+
         response.on("data", function(data) {
             console.log(JSON.parse(data));
         })
@@ -64,6 +64,6 @@ app.post("/failure", function(req, res){
     res.redirect("/")
 })
 
-app.listen(process.env.PORT || 3000, function(){
-    console.log("Server is running in port 3000");
+app.listen(process.env.PORT || 8000, function(){
+    console.log("Server is running in port 8000");
 });
